@@ -1,0 +1,37 @@
+[
+  {
+    "user": "Elon Mask",
+    "tweets": 777,
+    "followers": 100500,
+    "avatar": "url.jpg",
+    "id": "1"
+  },
+  {
+    "user": "Keanu Reeves",
+    "tweets": 555,
+    "followers": 800300,
+    "avatar": "url2.jpg",
+    "id": "2"
+  },
+  {
+    "user": "loe Biden",
+    "tweets": 333,
+    "followers": 1000001,
+    "avatar": "url3.jpg",
+    "id": "3"
+  },
+  {
+    "user": "Bill Gates",
+    "tweets": 1000,
+    "followers": 7777,
+    "avatar": "url4.jpg",
+    "id": "4"
+  },
+  {
+    "user": "Mark Zuckerberg ",
+    "tweets": 999,
+    "followers": 3003,
+    "avatar": "url5.jpg",
+    "id": "5"
+  }
+]
