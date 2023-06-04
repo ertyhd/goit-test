@@ -1,10 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import {
-  fetchAllCards,
-  fetchAddFollow,
-  fetchDeleteFollow,
-} from './tweetsFollow-operations';
+import { fetchAllCards, fetchAddFollow } from './tweetsFollow-operations';
 
 const initialState = {
   items: [],
@@ -13,7 +9,7 @@ const initialState = {
 };
 
 const cardsSlice = createSlice({
-  name: 'contacts',
+  name: 'cards',
   initialState,
   extraReducers: builder => {
     builder
@@ -33,21 +29,14 @@ const cardsSlice = createSlice({
       })
       .addCase(fetchAddFollow.fulfilled, (store, { payload }) => {
         store.loading = false;
-        store.items.push(payload);
+        store.items = store.items.map(item => {
+          if (item.id === payload.id) {
+            return { ...payload };
+          }
+          return item;
+        });
       })
       .addCase(fetchAddFollow.rejected, (store, { payload }) => {
-        store.loading = false;
-        store.error = payload;
-      })
-      .addCase(fetchDeleteFollow.pending, store => {
-        store.loading = true;
-      })
-      .addCase(fetchDeleteFollow.fulfilled, (store, { payload }) => {
-        store.loading = false;
-        const index = store.items.findIndex(item => item.id === payload);
-        store.items.splice(index, 1);
-      })
-      .addCase(fetchDeleteFollow.rejected, (store, { payload }) => {
         store.loading = false;
         store.error = payload;
       });

@@ -1,12 +1,15 @@
-import Cards from 'components/Cards';
+import UserRouter from './UserRouter';
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
 import { store } from './redux/store';
 
 function App() {
   return (
     <Provider store={store}>
-      <Cards />
+      <BrowserRouter>
+        <UserRouter />
+      </BrowserRouter>
     </Provider>
   );
 }
