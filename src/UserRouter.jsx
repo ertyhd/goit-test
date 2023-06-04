@@ -13,8 +13,8 @@ const UserRoutes = () => {
   return (
     <Suspense>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/tweets" element={<TweetsPage />} />
+        <Route path="/goit-test/" element={<HomePage />} />
+        <Route path="/goit-test/tweets" element={<TweetsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Suspense>

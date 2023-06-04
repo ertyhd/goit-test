@@ -7,7 +7,7 @@ const HomePage = () => {
       <h1 className={styles.pContainer}>
         Hellow user1 But I don`t know what you can do here
       </h1>
-      <Link className={styles.btnContainer} to="/tweets">
+      <Link className={styles.btnContainer} to="/goit-test/tweets">
         Go!
       </Link>
     </div>
