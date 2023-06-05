@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_test=self.webpackChunkgoit_test||[]).push([[714],{6714:function(e,t,n){n.r(t),n.d(t,{default:function(){return h}});var o=n(1087),s="homePage_homeContainer__yXh4V",a="homePage_pContainer__kBAnD",r="homePage_btnContainer__cumJJ",c=n(184),h=function(){return(0,c.jsxs)("div",{className:s,children:[(0,c.jsx)("h1",{className:a,children:"Hellow user1 But I don`t know what you can do here"}),(0,c.jsx)(o.rU,{className:r,to:"/goit-test/tweets",children:"Go!"})]})}}}]);
+//# sourceMappingURL=714.fb326074.chunk.js.map
